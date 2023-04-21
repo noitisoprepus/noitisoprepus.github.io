@@ -1,0 +1,12 @@
+@import '_colors';
+
+@mixin alignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: $accent1;
+    @include alignCenter();
+}
