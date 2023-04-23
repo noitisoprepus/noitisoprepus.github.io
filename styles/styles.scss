@@ -7,6 +7,10 @@
 }
 
 body {
-    background-color: $accent1;
+    background-color: $secondary;
     @include alignCenter();
+}
+
+i {
+    background-color: $accent1;
 }

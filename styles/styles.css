@@ -1,6 +1,10 @@
 body {
-  background-color: #587792;
+  background-color: #dce1de;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+i {
+  background-color: #587792;
 }/*# sourceMappingURL=styles.css.map */
