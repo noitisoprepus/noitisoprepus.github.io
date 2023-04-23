@@ -49,9 +49,17 @@ html {
 
 .hero__info-header {
   text-align: center;
+  margin: 1rem;
 }
 
 .hero__info-content {
   text-align: justify;
-  text-justify: inter-word;
+  margin: 0;
+}
+
+.hero__chevron-down {
+  color: #dce1de;
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
 }/*# sourceMappingURL=styles.css.map */
