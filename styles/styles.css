@@ -182,4 +182,13 @@ html {
   .projects__sample-image {
     zoom: 2;
   }
+}
+.contact {
+  margin: 40px 10px 10px 10px;
+  font-size: smaller;
+}
+
+.contact-email {
+  text-decoration: none;
+  color: #587792;
 }/*# sourceMappingURL=styles.css.map */
