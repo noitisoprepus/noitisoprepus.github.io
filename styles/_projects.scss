@@ -1,0 +1,79 @@
+@import '_variables';
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 5% 0% 5%;
+}
+
+.projects-header {
+    text-align: center;
+    margin: 0;
+    color: $accent2;
+}
+
+.projects__sample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__sample-content {
+    margin-bottom: 14px;
+}
+
+.projects__sample-content-title {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: $secondary;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.25s;
+}
+
+.projects__sample-content-title:hover {
+    color: $accent1;
+}
+
+.projects__sample-content-description {
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.projects__sample-image {
+    border-radius: 2.5%;
+    transition: all 0.25s;
+}
+
+.projects__sample-image:hover {
+    scale: 1.05;
+}
+
+@media only screen and (min-width: $tablet) {
+    .projects {
+        padding: 0% 15% 0% 15%;
+    }
+
+    .projects__sample-content {
+        margin-bottom: 20px;
+    }
+
+    .projects__sample-image {
+        zoom: 1.5;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .projects {
+        padding: 0% 30% 0% 30%;
+    }
+
+    .projects__sample-content {
+        margin-bottom: 30px;
+    }
+
+    .projects__sample-image {
+        zoom: 2;
+    }
+}
