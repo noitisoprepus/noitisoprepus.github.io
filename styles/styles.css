@@ -6,6 +6,22 @@ html {
   background-color: #131112;
 }
 
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+@keyframes upDown {
+  from {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
 .hero {
   display: flex;
   justify-content: center;
@@ -40,6 +56,11 @@ html {
 
 .hero__social-icon-link {
   color: #dce1de;
+  transition: all 0.25s;
+}
+
+.hero__social-icon-link:hover {
+  color: #587792;
 }
 
 .hero__info {
@@ -62,4 +83,5 @@ html {
   text-align: center;
   margin: 1rem;
   font-size: 2rem;
+  animation: upDown 1.5s ease-out infinite;
 }/*# sourceMappingURL=styles.css.map */

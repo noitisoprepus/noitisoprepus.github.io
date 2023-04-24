@@ -1,0 +1,77 @@
+@import '_colors';
+
+@keyframes upDown {
+    from {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 20% 5% 20%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__profile {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.hero__profile-photo {
+    border-radius: 50%;
+}
+
+.hero__socials {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.hero__social-icon-link {
+    color: $secondary;
+    transition: all 0.25s;
+}
+
+.hero__social-icon-link:hover {
+    color: $accent1;
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__info-header {
+    text-align: center;
+    margin: 1rem;
+}
+
+.hero__info-content {
+    text-align: justify;
+    margin: 0;
+}
+
+.hero__chevron-down {
+    color: $secondary;
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    animation: upDown 1.5s ease-out infinite;
+}
