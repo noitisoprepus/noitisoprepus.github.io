@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
 html {
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-size: 14px;
   color: #dce1de;
   background-color: #131112;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 24px;
   }
 }
 @keyframes upDown {
@@ -24,14 +29,10 @@ html {
 }
 .hero {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5% 20% 5% 20%;
-}
-
-.hero__content {
-  display: flex;
-  flex-direction: column;
+  padding: 5%;
 }
 
 .hero__profile {
@@ -84,4 +85,28 @@ html {
   margin: 1rem;
   font-size: 2rem;
   animation: upDown 1.5s ease-out infinite;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 5% 10% 5% 10%;
+  }
+  .hero__info-header {
+    font-size: 1.2rem;
+  }
+  .hero__chevron-down {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 5% 20% 5% 20%;
+  }
+  .hero__info-header {
+    font-size: 1.5rem;
+  }
+  .hero__chevron-down {
+    display: block;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,4 @@
-@import '_colors';
+@import '_variables';
 
 @keyframes upDown {
     from {
@@ -14,14 +14,10 @@
 
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5% 20% 5% 20%;
-}
-
-.hero__content {
-    display: flex;
-    flex-direction: column;
+    padding: 5%;
 }
 
 .hero__profile {
@@ -74,4 +70,33 @@
     margin: 1rem;
     font-size: 2rem;
     animation: upDown 1.5s ease-out infinite;
+    display: none;
+}
+
+@media only screen and (min-width: $tablet) {
+    .hero {
+        padding: 5% 10% 5% 10%;
+    }
+
+    .hero__info-header {
+        font-size: 1.2rem;
+    }
+
+    .hero__chevron-down {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: $tablet) {
+    .hero {
+        padding: 5% 20% 5% 20%;
+    }
+
+    .hero__info-header {
+        font-size: 1.5rem;
+    }
+
+    .hero__chevron-down {
+        display: block;
+    }
 }
