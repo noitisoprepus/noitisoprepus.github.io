@@ -1,139 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="./styles/styles.css" />
-        <link rel="icon" href="./assets/pictures/portfolio.png">
-        <script src="https://kit.fontawesome.com/ae6ed92e2c.js" crossorigin="anonymous"></script>
-        
-        <title>RR Peralta | Portfolio</title>
-    </head>
-    
-    <body>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero__profile">
-                <img src="./assets/pictures/rr.png" alt="Avatar" class="hero__profile-photo"/>
-                <div class="hero__socials">
-                    <div class="home-hero__social">
-                        <a href="https://www.linkedin.com/in/ralph-ryan-peralta-309b16259/" target="_blank" class="hero__social-icon-link">
-                            <i class="fab fa-linkedin fa-lg" alt="Linkedin"></i>
-                        </a>
-                    </div>
-                    <div class="home-hero__social">
-                        <a href="https://github.com/noitisoprepus/" target="_blank" class="hero__social-icon-link">
-                            <i class="fab fa-github fa-lg" alt="GitHub"></i>
-                        </a>
-                    </div>
-                    <div class="home-hero__social">
-                        <a href="https://noitisoprepus.itch.io/" target="_blank" class="hero__social-icon-link">
-                            <i class="fab fa-itch-io fa-lg" alt="itch.io"></i>
-                        </a>
-                    </div>
-                    <div class="home-hero__social">
-                        <a href="https://www.facebook.com/ralphryan.peralta/" target="_blank" class="hero__social-icon-link">
-                            <i class="fab fa-facebook fa-lg" alt="Facebook"></i>
-                        </a>
-                    </div>
-                    <div class="home-hero__social">
-                        <a href="https://www.instagram.com/rr.peralta/" target="_blank" class="hero__social-icon-link">
-                            <i class="fab fa-instagram fa-lg" alt="instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__info">
-                <h3 class="hero__info-header">Hello! I'm Ralph Ryan Peralta</h3>
-                <p class="hero__info-content">
-                    I'm a passionate game developer who loves creating (as well as playing) immersive and meaningful games. 
-                    Through several years of exploration across various fields of arts and sciences, I have developed a wide 
-                    range of skills in programming, game design, visual arts, and music production. This diverse skillset 
-                    enables me to approach game development with a unique perspective and tackle challenges from multiple 
-                    angles. I'm always seeking new challenges and opportunities to work with individuals who share my passion.
-                </p>
-            </div>
-            <div class="hero__chevron-down">
-                <i class="fa-solid fa-chevron-down"></i>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ralph Ryan Peralta’s software engineering portfolio.">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./assets/pictures/portfolio.png">
+    <title>Ralph Ryan Peralta | Software Engineer</title>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav aria-label="Main">
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="intro" aria-labelledby="name">
+            <img class="portrait" src="./assets/pictures/rr.png" alt="Ralph Ryan Peralta" width="460" height="460">
+            <div>
+                <h1 id="name">Ralph Ryan Peralta</h1>
+                <p class="role">Software Engineer</p>
+                <p>I'm a full-stack developer mainly working within the .NET ecosystem. I enjoy building web applications, working with APIs, and figuring out how things work behind the scenes.</p>
+                <p>Currently, I'm experimenting with different ways to make the most out of AI-assisted development without losing sight of the fundamentals of software engineering.</p>
+                <p>Always curious, always learning, and looking to become a better developer along the way.</p>
+                <p class="handle">I go by <strong>noitisoprepus</strong> online. It’s “superposition” spelled backward, a nod to the quantum physics concept where a system can exist in multiple states at once until measured. I've always found that idea fascinating.
+                    <br/><br/>
+                    P.S. It's also because two of my favorite songs happen to be called "Superposition" — one by Young the Giant and the other by Daniel Caesar. So yeah, it's partly science, partly music.</p>
             </div>
         </section>
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2 class="projects-header">PROJECTS</h2>
-            <br>
-            <div class="projects__sample">
-                <a href="https://play.google.com/store/apps/details?id=com.L2P.WizardRace&hl=en&gl=US" target="_blank" class="projects__sample-link">
-                    <img src="/assets/pictures/wizard-race.jpg" alt="Wizard Race" width=300px height=167px class="projects__sample-image">
-                </a>
-                <div class="projects__sample-content">
-                    <a href="https://play.google.com/store/apps/details?id=com.L2P.WizardRace&hl=en&gl=US" target="_blank" class="projects__sample-content-title">
-                        Wizard Race
+
+        <section id="experience" class="page-section">
+            <h2>Experience</h2>
+            <p>A quick look at where I’ve worked and what I’ve contributed.</p>
+            <ol class="experience-list">
+                <li class="experience-card">
+                    <h3>Junior Software Developer</h3>
+                    <p class="meta">ScaleUp Solutions Inc. · August 2024 – Present</p>
+                    <p>I maintain their ERP product, suERP, built with C# and ASP.NET Core and have helped expand its functionality by implementing new modules.</p>
+                    <a target="_blank" rel="noopener" class="game-cover" href="https://www.scaleupsolutions.ph/suerp">
+                        <img class="suerp-preview" src="https://www.scaleupsolutions.ph/Themes/Scaleup/Content/Images/suERP_img.png" alt="suERP product preview" loading="lazy">
                     </a>
-                    <p class="projects__sample-content-description">
-                        Worked remotely for US startup, L2P Inc., in developing Wizard Race. Translated complex UI designs 
-                        into functional game elements, creating intuitive interfaces for Brewing, Character Customization, 
-                        and Marketplace. Integrated in-app purchases seamlessly, ensuring smooth transactions. Conducted 
-                        rigorous testing and bugfixing for a glitch-free gameplay experience, enhancing user satisfaction.
-                    </p>
-                </div>
-            </div>
-            <br>
-            <div class="projects__sample">
-                <a href="https://store.steampowered.com/app/2597480/Bardic_Quest_for_Love/" target="_blank" class="projects__sample-link">
-                    <img src="/assets/pictures/bardic.jpg" alt="Bardic: Quest For Love" width=300px height=167px class="projects__sample-image">
-                </a>
-                <div class="projects__sample-content">
-                    <a href="https://store.steampowered.com/app/2597480/Bardic_Quest_for_Love/" target="_blank" class="projects__sample-content-title">
-                        Bardic: Quest for Love
+                </li>
+                <li class="experience-card">
+                    <h3>Software Engineer Intern</h3>
+                    <p class="meta">Hooli Software · June 2023 – July 2023</p>
+                    <p>I built frontend features and fixed UI issues for a dating app across its React web client and React Native mobile app.</p>
+                    <p>(This was part of my undergraduate internship, which was capped at 250 hours.)</p>
+                </li>
+                <li class="experience-card">
+                    <h3>Unity Developer</h3>
+                    <p class="meta">L2P Inc. · June 2020 – September 2021</p>
+                    <p>I developed gameplay features for Wizard Race, a 3D mobile platformer game made using Unity. I also helped integrate Azure PlayFab for its online features and helped bring the game to deployment.</p>
+                    <a target="_blank" rel="noopener" class="game-cover" href="https://play.google.com/store/apps/details?id=com.L2P.WizardRace&amp;hl=en&amp;gl=US" aria-label="Wizard Race’s original Google Play listing">
+                        <img src="./assets/pictures/wizard-race.jpg" alt="" width="1440" height="719" loading="lazy">
                     </a>
-                    <p class="projects__sample-content-description">
-                        Contribute to designing "Bardic: Quest for Love" by inputting dialogue lines using Yarn Spinner, 
-                        selecting character poses, and curating music and sound design for scenes. Collaborate closely 
-                        with the team to enhance player immersion and create engaging gameplay experiences.
-                    </p>
-                </div>
-            </div>
-            <br>
-            <div class="projects__sample">
-                <a href="https://noitisoprepus.itch.io/mr-catosky" target="_blank" class="projects__sample-link">
-                    <img src="/assets/pictures/mr-catosky.png" alt="Mr. Catosky" width=200px height=127px class="projects__sample-image">
-                </a>
-                <div class="projects__sample-content">
-                    <a href="https://noitisoprepus.itch.io/mr-catosky" target="_blank" class="projects__sample-content-title">
-                        Mr. Catosky
-                    </a>
-                    <p class="projects__sample-content-description">
-                        A whack-a-mole game made using Unity. Made within 72 hours for the Mini Jam 127.
-                    </p>
-                </div>
-            </div>
-            <br>
-            <div class="projects__sample">
-                <a href="https://noitisoprepus.itch.io/bloodsucker" target="_blank" class="projects__sample-link">
-                    <img src="/assets/pictures/bloodsucker.png" alt="Bloodsucker" width=200px height=157px class="projects__sample-image">
-                </a>
-                <div class="projects__sample-content">
-                    <a href="https://noitisoprepus.itch.io/bloodsucker" target="_blank" class="projects__sample-content-title">
-                        Bloodsucker
-                    </a>
-                    <p class="projects__sample-content-description">
-                        A fast-paced action game made using Godot. Made within 72 hours for the Mini Jam 118.
-                    </p>
-                </div>
-            </div>
-            
+                    <p class="meta">*Formerly available on Google Play</p>
+                </li>
+            </ol>
         </section>
-        <!-- Contact Me Section -->
-        <section class="contact">
-            <p class="contact-text">
-                Let's create amazing and inspiring games together! Email me at
-                <span>
-                    <a href="mailto:ralphryan.peralta@gmail.com" target="_blank" class="contact-email">
-                        ralphryan.peralta@gmail.com
-                    </a>
-                </span>
-            </p>
+
+        <section id="projects" class="page-section">
+            <h2>Projects</h2>
+            <p>Here’s what I’ve built and worked on, from software and web projects to games.</p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>HowsYourDay</h3>
+                    <p>A self-hosted journaling server that analyzes emotional trends using a lightweight NLP pipeline.</p>
+                    <p class="meta">C# · ASP.NET Core · Blazor · PostgreSQL · Docker · Azure</p>
+                    <p><a target="_blank" rel="noopener" href="https://howsyourday.space">Live Site</a></p>
+                </article>
+                <article class="project-card">
+                    <h3>ModuLearn</h3>
+                    <p>A mobile app template for module-based learning with text-to-speech and voice commands.</p>
+                    <p class="meta">TypeScript · Expo</p>
+                    <p><a target="_blank" rel="noopener" href="https://github.com/noitisoprepus/modulearn">ModuLearn on GitHub</a></p>
+                </article>
+                <article class="project-card">
+                    <h3>ModuLearn Maker</h3>
+                    <p>A simple desktop GUI tool for creating modules to be used in ModuLearn.</p>
+                    <p class="meta">Python · Tkinter</p>
+                    <p><a target="_blank" rel="noopener" href="https://github.com/noitisoprepus/modulearn-maker">ModuLearn Maker on GitHub</a></p>
+                </article>
+                <article class="project-card">
+                    <h3>Quick Audio Output Switch</h3>
+                    <p>A GNOME Shell extension to quickly switch between audio output devices from the top bar.</p>
+                    <p class="meta">JavaScript · Shell</p>
+                    <p><a target="_blank" rel="noopener" href="https://github.com/noitisoprepus/gnome-shell-extension-quick-audio-output-switch">Quick Audio Output Switch on GitHub</a></p>
+                </article>
+                <article class="project-card">
+                    <h3>Digeomon</h3>
+                    <p>My undergraduate thesis project: A gamified AR application for learning primary level Geometry.</p>
+                    <p class="meta">C# · Unity · Firebase</p>
+                    <p><a target="_blank" rel="noopener" href="https://github.com/noitisoprepus/digeomon-unity">Digeomon on GitHub</a></p>
+                </article>
+            </div>
+
+            <section class="game-projects" aria-label="Game projects">
+                <p class="game-note"><strong>Where it started.</strong> Game development drew me in to the love of programming.</p>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>Bardic: Quest for Love</h3>
+                        <a target="_blank" rel="noopener" class="game-cover" href="https://store.steampowered.com/app/2597480/Bardic_Quest_for_Love/" aria-label="Bardic: Quest for Love on Steam">
+                            <img src="./assets/pictures/bardic.jpg" alt="" width="616" height="353" loading="lazy">
+                        </a>
+                        <p class="meta">Steam</p>
+                        <p>Contributed as one of the game designers in setting up scenes.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Mr. Catosky</h3>
+                        <a target="_blank" rel="noopener" class="game-cover" href="https://noitisoprepus.itch.io/mr-catosky" aria-label="Mr. Catosky on itch.io">
+                            <img src="./assets/pictures/mr-catosky.png" alt="" width="192" height="108" loading="lazy">
+                        </a>
+                        <p class="meta">itch.io</p>
+                        <p>A whack-a-mole game I made in Unity in just72 hours for the Mini Jam 127.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Bloodsucker</h3>
+                        <a target="_blank" rel="noopener" class="game-cover" href="https://noitisoprepus.itch.io/bloodsucker" aria-label="Bloodsucker on itch.io">
+                            <img src="./assets/pictures/bloodsucker.png" alt="" width="630" height="500" loading="lazy">
+                        </a>
+                        <p class="meta">itch.io</p>
+                        <p>A fast-paced action game I made in Godot in just 72 hours for the Mini Jam 118.</p>
+                    </article>
+                </div>
+            </section>
         </section>
-    </body>
+    </main>
+
+    <footer id="contact" class="page-section">
+        <h2>Contact</h2>
+        <p>Email is the easiest way to reach me.</p>
+        <ul class="contact-links">
+            <li><a rel="noopener" href="mailto:ralphryan.peralta@gmail.com">ralphryan.peralta@gmail.com</a></li>
+            <li><a target="_blank" rel="noopener" href="https://github.com/noitisoprepus/">GitHub</a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/ralph-ryan-peralta-309b16259/">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
 </html>
